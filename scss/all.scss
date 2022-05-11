@@ -1,0 +1,108 @@
+@import "bootstrap/bootstrap.scss";
+
+//google font字體
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap");
+
+@import "index";
+
+//自訂通用類別
+.bg-gray{
+    background-color: #E8E8DB;
+}
+.text-gray100{
+    color: #636057;
+}
+.rounded-4{
+    border-radius: 30px;
+}
+.fontBalooTamma2{
+    font-family: 'Baloo Tamma 2';
+}
+
+//覆蓋元件預設樣式
+.btn{
+    min-width: 96px;
+}
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #FF785E;
+    border-color: #FF785E;
+}
+.btn-outline-secondary:hover {
+    color: #858377;
+    background: #FFDF65;
+    border-color: #FFDF65;
+    .fas{
+        color: #FF785E;
+    }
+}
+.btn-link{
+    color: #FF785E;
+    text-decoration: none;
+    &:hover{
+        color: #FF785E;   
+    }
+}
+.card{
+    border-radius: 8px;
+}
+.nav-tabs{
+    background-color: #FFFFFF;
+}
+.nav-tabs .nav-link{
+    color: #636057;
+    border: none;
+    border-bottom: 2px solid transparent;
+    &:hover,&.active{
+        font-weight: 700;
+        color: #636057;
+        background-color: #fff;
+        border-color: #FFDF65;
+    }
+}
+.accordion-item{
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 rgba(73,72,70,0.15);
+}
+.accordion-button > span{
+    color: #636057;
+    width: 28px;
+    height: 28px;
+}
+.accordion-button:not(.collapsed) {
+    color: #494846;
+    background-color: #fff;
+}
+.form-control,.form-select{
+    background: #F7F7F7;
+    border: none;
+}
+
+//裝飾性線條
+.bg-border{
+    position: absolute;
+    top: 16px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #FFDF65;
+    & + span{
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+    }
+}
+.bg-border-secondary{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #E8E8DB;
+    & + span{
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+    }
+}
